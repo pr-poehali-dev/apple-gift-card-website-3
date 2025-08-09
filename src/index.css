@@ -99,7 +99,20 @@
       "Segoe UI",
       Roboto,
       sans-serif;
-    cursor: none;
+    cursor: none !important;
+  }
+
+  * {
+    cursor: none !important;
+  }
+
+  button,
+  a,
+  [role="button"],
+  input,
+  textarea,
+  select {
+    cursor: none !important;
   }
 }
 
