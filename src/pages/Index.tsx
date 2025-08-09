@@ -89,7 +89,7 @@ const Index = () => {
             <div className="relative">
               <div className="relative z-10">
                 <img 
-                  src="/img/e825edc4-679a-4264-b418-2fbd5f6bce74.jpg"
+                  src="/img/32f68ed5-023d-4571-bb5b-9a1dd5a36cc9.jpg"
                   alt="Apple Gift Card"
                   className="w-full max-w-md mx-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
                 />
