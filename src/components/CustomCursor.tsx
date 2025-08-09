@@ -32,7 +32,7 @@ const CustomCursor = () => {
 
   return (
     <>
-      {/* Custom cursor with Gift icon */}
+      {/* Custom cursor with MousePointer icon */}
       <div
         className={`fixed top-0 left-0 z-50 pointer-events-none transition-all duration-200 ease-out ${
           isHovering ? 'scale-125' : 'scale-100'
@@ -41,13 +41,10 @@ const CustomCursor = () => {
           transform: `translate3d(${position.x - 12}px, ${position.y - 12}px, 0)`,
         }}
       >
-        <div className="w-6 h-6 bg-white rounded-full shadow-lg flex items-center justify-center border border-gray-200">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
-            <rect x="3" y="8" width="18" height="4" rx="1"/>
-            <path d="m12 8-1-4h2l-1 4"/>
-            <path d="M12 12v9"/>
-          </svg>
-        </div>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary drop-shadow-lg">
+          <path d="m3 3 7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/>
+          <path d="m13 13 6 6"/>
+        </svg>
       </div>
     </>
   );
