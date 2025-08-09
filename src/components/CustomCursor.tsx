@@ -32,20 +32,22 @@ const CustomCursor = () => {
 
   return (
     <>
-      {/* Custom cursor with image */}
+      {/* Custom cursor with Gift icon */}
       <div
         className={`fixed top-0 left-0 z-50 pointer-events-none transition-all duration-200 ease-out ${
           isHovering ? 'scale-125' : 'scale-100'
         }`}
         style={{
-          transform: `translate3d(${position.x - 16}px, ${position.y - 16}px, 0)`,
+          transform: `translate3d(${position.x - 12}px, ${position.y - 12}px, 0)`,
         }}
       >
-        <img 
-          src="/img/0009b8d5-e5cc-463c-8975-07788c052856.jpg"
-          alt="cursor"
-          className="w-8 h-8 rounded-lg shadow-lg opacity-90"
-        />
+        <div className="w-6 h-6 bg-white rounded-full shadow-lg flex items-center justify-center border border-gray-200">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+            <rect x="3" y="8" width="18" height="4" rx="1"/>
+            <path d="m12 8-1-4h2l-1 4"/>
+            <path d="M12 12v9"/>
+          </svg>
+        </div>
       </div>
     </>
   );
