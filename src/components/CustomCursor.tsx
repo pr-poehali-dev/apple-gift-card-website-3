@@ -34,11 +34,12 @@ const CustomCursor = () => {
     <>
       {/* Custom cursor with MousePointer icon */}
       <div
-        className={`fixed top-0 left-0 z-50 pointer-events-none transition-all duration-200 ease-out ${
-          isHovering ? 'scale-125' : 'scale-100'
+        className={`fixed top-0 left-0 z-50 pointer-events-none ${
+          isHovering ? 'scale-125 transition-transform duration-100' : 'scale-100'
         }`}
         style={{
           transform: `translate3d(${position.x - 12}px, ${position.y - 12}px, 0)`,
+          willChange: 'transform'
         }}
       >
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary drop-shadow-lg">
