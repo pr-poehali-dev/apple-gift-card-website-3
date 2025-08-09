@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Icon from '@/components/ui/icon';
+import CustomCursor from '@/components/CustomCursor';
 
 const giftCards = [
   { id: 1, value: 500, popular: false },
@@ -37,6 +38,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <CustomCursor />
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
