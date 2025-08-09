@@ -61,27 +61,40 @@ const Index = () => {
 
       {/* Hero Section */}
       <section id="home" className="relative py-24 px-4 overflow-hidden">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="fade-in">
-            <h1 className="text-6xl md:text-7xl font-light text-gray-900 mb-6 leading-tight">
-              Подарочные карты
-              <br />
-              <span className="font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Apple
-              </span>
-            </h1>
-            <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-              Идеальный подарок для любого случая. Дарите возможность выбора из миллионов приложений, игр, музыки и многого другого.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8 py-4 rounded-full">
-                <Icon name="ShoppingCart" size={20} className="mr-2" />
-                Купить сейчас
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 rounded-full">
-                <Icon name="Play" size={20} className="mr-2" />
-                Смотреть видео
-              </Button>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="fade-in text-center lg:text-left">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-gray-900 mb-6 leading-tight">
+                Подарочные карты
+                <br />
+                <span className="font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  Apple
+                </span>
+              </h1>
+              <p className="text-xl text-gray-600 mb-12 max-w-2xl leading-relaxed">
+                Идеальный подарок для любого случая. Дарите возможность выбора из миллионов приложений, игр, музыки и многого другого.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button size="lg" className="text-lg px-8 py-4 rounded-full">
+                  <Icon name="ShoppingCart" size={20} className="mr-2" />
+                  Купить сейчас
+                </Button>
+                <Button variant="outline" size="lg" className="text-lg px-8 py-4 rounded-full">
+                  <Icon name="Play" size={20} className="mr-2" />
+                  Смотреть видео
+                </Button>
+              </div>
+            </div>
+            
+            <div className="relative">
+              <div className="relative z-10">
+                <img 
+                  src="/img/e825edc4-679a-4264-b418-2fbd5f6bce74.jpg"
+                  alt="Apple Gift Card"
+                  className="w-full max-w-md mx-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 opacity-20 rounded-3xl blur-3xl transform scale-110"></div>
             </div>
           </div>
         </div>
